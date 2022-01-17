@@ -6,5 +6,4 @@ public class GuitarTab extends Item {
     public GuitarTab(String itemDescription, double buyPrice, double sellPrice) {
         super(itemDescription, buyPrice, sellPrice);
     }
-
 }

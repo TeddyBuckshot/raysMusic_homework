@@ -12,6 +12,18 @@ public class Drumkit extends Instrument{
         this.totalNoOfDrums = totalNoOfDrums;
     }
 
+    public int getNoOfToms() {
+        return noOfToms;
+    }
+
+    public int getNoOfCymbals() {
+        return noOfCymbals;
+    }
+
+    public int getTotalNoOfDrums() {
+        return totalNoOfDrums;
+    }
+
     @Override
     public String playInstrument() {
         return "ba dum dum, tiss";

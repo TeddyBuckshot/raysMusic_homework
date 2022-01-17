@@ -12,6 +12,18 @@ public class Guitar extends Instrument{
         this.isAcoustic = false;
     }
 
+    public int getNoOfPickUps() {
+        return noOfPickUps;
+    }
+
+    public int getNoOfStrings() {
+        return noOfStrings;
+    }
+
+    public boolean isAcoustic() {
+        return isAcoustic;
+    }
+
     @Override
     public String playInstrument() {
         return "Sir, stairway to heaven is on our ban list.";

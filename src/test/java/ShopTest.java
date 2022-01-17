@@ -32,6 +32,18 @@ public class ShopTest {
     }
 
     @Test
+    public void instrumentsHaveUniqueAttributes(){
+        assertEquals(6, guitar.getNoOfStrings());
+        assertEquals(6, drumkit.getTotalNoOfDrums());
+    }
+
+    @Test
+    public void instrumentsInheritSuperclass(){
+        assertEquals("red", guitar.getColour());
+        assertEquals("percussion instrument", drumkit.getType().getValue());
+    }
+
+    @Test
     public void canCalculateMarkup(){
         assertEquals(300.99, guitar.calculateMarkup(), 0.01);
         assertEquals(124.01, drumkit.calculateMarkup(), 0.01);
@@ -77,11 +89,6 @@ public class ShopTest {
     }
 
     @Test
-    public void instrumentHasEnumType(){
-        assertEquals("string instrument", guitar.getType().getValue());
-    }
-
-    @Test
     public void canCalculateTotalPotentialProfit(){
         rays_music.addStock(guitar);
         rays_music.addStock(drumkit);
@@ -91,6 +98,13 @@ public class ShopTest {
         assertEquals(430.09, potentialProfit, 0.01);
     }
 
+    @Test
+    public void instrumentHasEnumType(){
+        assertEquals("string instrument", guitar.getType().getValue());
+    }
 
+    @Test
+    public void canUseBuilderClass(){
 
+    }
 }
